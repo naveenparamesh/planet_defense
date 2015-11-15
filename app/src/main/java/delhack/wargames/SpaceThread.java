@@ -1,23 +1,21 @@
 package delhack.wargames;
 
-
 import android.graphics.Canvas;
 import android.media.SoundPool;
 
-public class Orbital_Thread extends Thread {
+public class SpaceThread extends Thread{
 
-
-    Oribit_Defense_Surface_View orbitalSurfaceView; // the surface view of the game
+    MySpaceView spaceView;
     private boolean running = false; // if the thread is running or not
     public long sleepMillis = 20; // determines fps of game, the lower the better
-
+    SoundPool SP; // plays music
     int sound_hit; // sound of item hit
     Canvas canvas; // the canvas
 
 
-    public Orbital_Thread(Oribit_Defense_Surface_View orbitalSurfaceView){
+    public SpaceThread(MySpaceView spaceView){
         super();
-        this.orbitalSurfaceView = orbitalSurfaceView;
+        this.spaceView = spaceView;
 
     }
 
@@ -33,20 +31,20 @@ public class Orbital_Thread extends Thread {
 
             // basically locks canvas and posts it
             // only if it hasn't been done already
-            if(!orbitalSurfaceView.posted){
-                canvas = orbitalSurfaceView.getHolder().lockCanvas();
+            if(!spaceView.posted){
+                canvas = spaceView.getHolder().lockCanvas();
 
             }
             else {
-                orbitalSurfaceView.posted = false;
+                spaceView.posted = false;
             }
 
             if(canvas != null){
-                synchronized (orbitalSurfaceView.getHolder()){
-                    orbitalSurfaceView.myDraw(canvas);
+                synchronized (spaceView.getHolder()){
+                    spaceView.myDraw(canvas);
                 }
-                if(!orbitalSurfaceView.posted){
-                    orbitalSurfaceView.getHolder().unlockCanvasAndPost(canvas);
+                if(!spaceView.posted){
+                    spaceView.getHolder().unlockCanvasAndPost(canvas);
                 }
 
 
@@ -63,16 +61,4 @@ public class Orbital_Thread extends Thread {
 
         }
     }
-
-
-
-
-
-
-
-
-
 }
-
-
-

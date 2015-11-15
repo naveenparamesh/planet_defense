@@ -6,15 +6,32 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Oribital_Defense"
+            android:name=".MainMenu"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Instructions"
+            android:label="@string/instructions" >
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:label="@string/title_activity_game" >
+        </activity>
+        <activity
+            android:name=".SpaceCombat"
+            android:label="@string/title_space_combat" >
+        </activity>
+        <activity
+            android:name=".SpaceGame"
+            android:label="@string/space_game" >
         </activity>
     </application>
 

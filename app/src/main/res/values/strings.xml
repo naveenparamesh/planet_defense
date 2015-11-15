@@ -1,6 +1,49 @@
 <resources>
-    <string name="app_name">War Games</string>
-
+    <string name="app_name">War Game</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_options">OptionsActivity</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_instructions">InstructionsActivity</string>
+    <string name="title_space_combat">Space Combat</string>
+    <string name="space_game">Space Game</string>
+    <string name="start">Start Game</string>
+    <string name="instructions">Instructions</string>
+    <string name="options">Options</string>
+    <string name="next">Escort your ships!</string>
+    <string name="exit">Exit</string>
+    <string name="Game_Introduction">
+            In the future, the bulging population of humanity has forced it to
+        expand to other planets. 40 years ago they sent a colony ship to explore
+        the nearest earth like planet after initial probe confirmed Oxygen and
+        H2O moister in its atmosphere. But the probe was intercepted by aliens
+        who are now invading humanity\’s solar system!
+
+        Humanity has a single advanced ship capable of combating the new alien
+        threat, and you are the captain of one of this vessels. You must defend
+        our planet from orbital strikes, and protect humanity\'s billions from
+        certain doom. You are humanity\'s only hope!
+    </string>
+    <string name="Planet_Surface_Defense_Introduction">
+            The orbital defenses have proven inadequate. We need you to protect our surface
+        facilities from harm! Move your ship with (left) and (right) to drop water (down)
+        down upon the fires and destruction! The shields of the base will be able to provide
+        protection from the fires, and the recharge over time, but if the fires grow too
+        much, they will fail and our facilities will be destroyed! If 20 or more fires
+        exist at once, our shields will not be able to keep up. The shields will also
+        fail if any fire grows too large!
+        This is an important supply facility, whose goods, and more importantly people,
+        are counting on your efforts!
+        INSERT PICTURE HERE
+    </string>
+    <string name="Space_Combat_Fleeing_Introduction">
+            All our bases on this planet have been destroyed or overrun! We must
+        evacuate to the nearest human outpost. You must protect our supply vessels
+        until they are able to reach the outpost. The shields on this ship are
+        not powerful enough to deflect enemy fire, but the shields can absord
+        shots. Our supply vessels only have enough power for their shields to
+        block three shots, but yours\' will recharge quickly.
+        INSERT PICTURE HERE
+    </string>
+    <string name="title_activity_my_space_view">MySpaceView</string>
 </resources>
